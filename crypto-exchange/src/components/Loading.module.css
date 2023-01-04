@@ -1,0 +1,17 @@
+.container {
+    width: 100vw;
+    height: calc(100vh - 83px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    border-radius: 50%;
+}
+
+.container h2 {
+    color: #e7e8e9;
+    margin-top: 24px;
+}

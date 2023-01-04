@@ -1,0 +1,14 @@
+.container input {
+    width: calc(100vw - 41px);
+    margin: 24px 12px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #e7e8e9;
+    color: #3e3f42;
+}
+
+.container input::placeholder {
+    color: #747475;
+}

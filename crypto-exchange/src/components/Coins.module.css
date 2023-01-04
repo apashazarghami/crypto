@@ -1,0 +1,50 @@
+.container {
+    width: calc(100vw - 48px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e7e8e9;
+    margin: 0 auto;
+    font-size: 0.6rem;
+    padding: 12px 0;
+}
+
+.container img {
+    width: 20px;
+    height: 20px;
+}
+
+.container h3 {
+    width: 110px;
+    font-size: 0.5rem;
+    color: #969898;
+    text-align: left;
+}
+
+.container p {
+    text-align: left;
+}
+
+.container p:nth-child(3) {
+    width: 40px;
+}
+
+.container p:nth-child(4) {
+    width: 55px;
+}
+
+.container p:nth-child(5) {
+    width: 20px;
+}
+
+.container p:nth-child(6) {
+    display: none;
+}
+
+.increase {
+    color: #a0ab51;
+}
+
+.decrease {
+    color: #89554a;
+}
