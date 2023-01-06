@@ -15,7 +15,7 @@
 
 @media(min-width: 769px) {
     .container {
-        width: 100vw;
+        width: calc(100vw - 48px);
     }
     .container input {
         width: 50%;
