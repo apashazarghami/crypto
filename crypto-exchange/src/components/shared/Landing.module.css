@@ -12,3 +12,13 @@
 .container input::placeholder {
     color: #747475;
 }
+
+@media(min-width: 769px) {
+    .container {
+        width: 100vw;
+    }
+    .container input {
+        width: 50%;
+        margin: 48px 25%;
+    }
+}
