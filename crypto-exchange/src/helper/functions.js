@@ -1,6 +1,6 @@
 const fixedNumber = number => {
-    const fixedNumber = number.toFixed(2);
-    return fixedNumber;
+    const fixedNumber = Number(number).toFixed(2);
+    return Number(fixedNumber);
 }
 
 export { fixedNumber };

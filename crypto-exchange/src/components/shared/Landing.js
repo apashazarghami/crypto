@@ -18,7 +18,7 @@ const Landing = () => {
             <div>
                 {
                     coins.length ?
-                    coins.map(coin => <Coins key={coin.id} coinInformation={coin} />) :
+                    coins.map(coin => coin.name.toLowerCase().includes(searchCoins.toLowerCase()) && <Coins key={coin.id} coinInformation={coin} />) :
                     <Loading />
                 }
             </div>

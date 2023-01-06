@@ -1,12 +1,11 @@
 .container {
-    width: calc(100vw - 48px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #e7e8e9;
     margin: 0 auto;
     font-size: 0.6rem;
-    padding: 12px 0;
+    padding: 12px 24px;
 }
 
 .container img {
@@ -14,11 +13,20 @@
     height: 20px;
 }
 
+.container a {
+    text-decoration: none;
+}
+
 .container h3 {
     width: 110px;
     font-size: 0.5rem;
     color: #969898;
     text-align: left;
+    transition: all 0.3s linear;
+}
+
+.container a h3:hover {
+    color: #e7e8e9;
 }
 
 .container p {
