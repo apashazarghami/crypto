@@ -1,3 +1,9 @@
+.container > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container input {
     width: calc(100% - 48px);
     margin: 24px;
@@ -13,12 +19,13 @@
     color: #747475;
 }
 
-@media(min-width: 769px) {
+@media(min-width: 940px) {
     .container {
-        width: calc(100vw - 48px);
+        width: calc(100% - 48px);
     }
+
     .container input {
         width: 50%;
-        margin: 48px 25%;
+        margin: 48px 0;
     }
 }

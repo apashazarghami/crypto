@@ -22,27 +22,27 @@ const CoinInformation = () => {
             <div className={styles.details}>
                 <div>
                     <h3>Price</h3>
-                    <p>${current_price}</p>
+                    <p>${current_price.toLocaleString()}</p>
                 </div>
                 <div>
                     <h3>Market cap</h3>
-                    <p>{`${market_cap} (${market_cap_rank})`}</p>
+                    <p>{`${market_cap.toLocaleString()} (${market_cap_rank}th)`}</p>
                 </div>
                 <div>
                     <h3>Total volume</h3>
-                    <p>{total_volume}</p>
+                    <p>{total_volume.toLocaleString()}</p>
                 </div>
                 <div>
                     <h3>High & low price</h3>
-                    <p><span className={high_24h < current_price ? styles.decrease : styles.increase}>${high_24h}</span><span className={low_24h < current_price ? styles.decrease : styles.increase}>${low_24h}</span></p>
+                    <p><span className={high_24h < current_price ? styles.decrease : styles.increase}>${high_24h.toLocaleString()}</span><span className={low_24h < current_price ? styles.decrease : styles.increase}>${low_24h.toLocaleString()}</span></p>
                 </div>
                 <div>
                     <h3>Price change</h3>
-                    <p className={price_change_percentage_24h < 0 ? styles.decrease : styles.increase}>{`$${fixedNumber(price_change_24h)} (${fixedNumber(price_change_percentage_24h)}%)`}</p>
+                    <p className={price_change_percentage_24h < 0 ? styles.decrease : styles.increase}>{`$${fixedNumber(price_change_24h).toLocaleString()} (${fixedNumber(price_change_percentage_24h)}%)`}</p>
                 </div>
                 <div>
                     <h3>Market cap change</h3>
-                    <p  className={market_cap_change_24h < 0 ? styles.decrease : styles.increase}>{`${fixedNumber(market_cap_change_24h)} (${fixedNumber(market_cap_change_percentage_24h)}%)`}</p>
+                    <p  className={market_cap_change_24h < 0 ? styles.decrease : styles.increase}>{`${fixedNumber(market_cap_change_24h).toLocaleString()} (${fixedNumber(market_cap_change_percentage_24h)}%)`}</p>
                 </div>
             </div>
             <Link to="/">Home page</Link>

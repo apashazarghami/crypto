@@ -1,4 +1,4 @@
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 //styles
 import './App.css';
 //components
@@ -8,11 +8,11 @@ import CoinInformation from "./components/shared/CoinInformation";
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route path="/:id" component={CoinInformation} />
-        <Route path="/" component={Landing} />
-        <Redirect to="/" />
-      </Switch>
+      <Routes>
+        <Route path="/:id" element={<CoinInformation />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/*" element={<Navigate to="/" />} />
+      </Routes>
     </div>
   );
 }

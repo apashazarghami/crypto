@@ -11,7 +11,7 @@ const CoinsContextProvider = ({ children }) => {
             setCoins(await getCoins());
         }
         fetchAPI();
-    })
+    }, [])
     return(
         <CoinsContext.Provider value={coins}>
             {children}

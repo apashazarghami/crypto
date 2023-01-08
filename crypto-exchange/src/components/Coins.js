@@ -12,9 +12,9 @@ const Coins = ({ coinInformation }) => {
             <Link to={`${id}`}><img src={image} alt={id} /></Link>
             <Link to={`${id}`}><h3>{name}</h3></Link>
             <p>{symbol}</p>
-            <p>${current_price}</p>
-            <p className={price_change_percentage_24h < 0 ? styles.decrease : styles.increase}>{fixedNumber(price_change_percentage_24h)}</p>
-            <p>{market_cap}</p>
+            <p>${current_price.toLocaleString()}</p>
+            <p className={price_change_percentage_24h < 0 ? styles.decrease : styles.increase}>{`${fixedNumber(price_change_percentage_24h)}%`}</p>
+            <p>{market_cap.toLocaleString()}</p>
         </div>
     )
 }
